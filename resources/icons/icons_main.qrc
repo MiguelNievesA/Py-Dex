@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="welcome"/>
+  <qresource prefix="theme_app">
+    <file>arrow-right_theme.svg</file>
+    <file>email_theme.svg</file>
+    <file>github_theme.svg</file>
+  </qresource>
+  <qresource prefix="default">
+    <file>arrow-left.svg</file>
+    <file>email.svg</file>
+    <file>github.svg</file>
+  </qresource>
+</RCC>
