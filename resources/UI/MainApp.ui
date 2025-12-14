@@ -181,7 +181,7 @@ padding: 9px;
                   </property>
                   <property name="icon">
                    <iconset>
-                    <normaloff>../icons/menu/icon_main.png</normaloff>../icons/menu/icon_main.png</iconset>
+                    <normaloff>../icons/menu/logo_app.png</normaloff>../icons/menu/logo_app.png</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -342,7 +342,7 @@ color: white;
                   </property>
                   <property name="icon">
                    <iconset>
-                    <normaloff>../icons/menu/icon_pokedex.svg</normaloff>../icons/menu/icon_pokedex.svg</iconset>
+                    <normaloff>../icons/menu/pokedex.svg</normaloff>../icons/menu/pokedex.svg</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -351,6 +351,19 @@ color: white;
                    </size>
                   </property>
                  </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_12">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                 </spacer>
                 </item>
                 <item>
                  <widget class="QLabel" name="label_btn_1">
@@ -439,7 +452,7 @@ border-radius: 12px;
                   </property>
                   <property name="icon">
                    <iconset>
-                    <normaloff>../icons/menu/icon_items.svg</normaloff>../icons/menu/icon_items.svg</iconset>
+                    <normaloff>../icons/menu/items.svg</normaloff>../icons/menu/items.svg</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -448,6 +461,19 @@ border-radius: 12px;
                    </size>
                   </property>
                  </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_11">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                 </spacer>
                 </item>
                 <item>
                  <widget class="QLabel" name="label_btn_2">
@@ -538,7 +564,7 @@ border-radius: 12px;
                   </property>
                   <property name="icon">
                    <iconset>
-                    <normaloff>../icons/menu/icon_berries.svg</normaloff>../icons/menu/icon_berries.svg</iconset>
+                    <normaloff>../icons/menu/berries.svg</normaloff>../icons/menu/berries.svg</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -547,6 +573,19 @@ border-radius: 12px;
                    </size>
                   </property>
                  </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_10">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                 </spacer>
                 </item>
                 <item>
                  <widget class="QLabel" name="label_btn_3">
@@ -637,7 +676,7 @@ border-radius: 12px;
                   </property>
                   <property name="icon">
                    <iconset>
-                    <normaloff>../icons/menu/theme_style/icon_history.svg</normaloff>../icons/menu/theme_style/icon_history.svg</iconset>
+                    <normaloff>../icons/menu/history.svg</normaloff>../icons/menu/history.svg</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -646,6 +685,19 @@ border-radius: 12px;
                    </size>
                   </property>
                  </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_9">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>21</height>
+                   </size>
+                  </property>
+                 </spacer>
                 </item>
                 <item>
                  <widget class="QLabel" name="label_btn_4">
@@ -749,7 +801,7 @@ border: none;
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>../icons/menu/settings.svg</normaloff>../icons/menu/settings.svg</iconset>
+                 <normaloff>../icons/menu/settings_fill.svg</normaloff>../icons/menu/settings_fill.svg</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -773,7 +825,7 @@ border: none;
             <property name="sizeHint" stdset="0">
              <size>
               <width>20</width>
-              <height>6</height>
+              <height>7</height>
              </size>
             </property>
            </spacer>
@@ -828,37 +880,49 @@ border: none;
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_8">
                  <item>
-                  <widget class="QToolButton" name="btn_sound">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
+                  <widget class="QFrame" name="frame_33">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
                    </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>55</width>
-                     <height>90</height>
-                    </size>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
                    </property>
-                   <property name="styleSheet">
-                    <string notr="true">#btn_sound {
+                   <layout class="QHBoxLayout" name="horizontalLayout_23">
+                    <item>
+                     <widget class="QToolButton" name="btn_sound">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>55</width>
+                        <height>90</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">#btn_sound {
 border: none;
 }</string>
-                   </property>
-                   <property name="text">
-                    <string>...</string>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normaloff>../icons/buttons options/volume_up.svg</normaloff>../icons/buttons options/volume_up.svg</iconset>
-                   </property>
-                   <property name="iconSize">
-                    <size>
-                     <width>25</width>
-                     <height>25</height>
-                    </size>
-                   </property>
+                      </property>
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                      <property name="icon">
+                       <iconset>
+                        <normaloff>../icons/buttons/volume_mute.svg</normaloff>../icons/buttons/volume_mute.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>30</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                  <item>
@@ -984,7 +1048,7 @@ background-color: transparent;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;Esta es &lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:696; color:#fe9090;&quot;&gt;la Pydex&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;, una aplicación que te permitirá obtener información en tiempo real sobre el mundo Pokémon. &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;Actualmente estás utilizando&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:696; color:#fe9090;&quot;&gt; la versión Beta-2.0&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; color:#000000;&quot;&gt;. S&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;i tienes alguna sugerencia sobre una nueva función, errores, etc. Te dejaré aquí un botón al repositorio de GitHub o puedes escribirme con confianza a mi correo.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;Actualmente estás utilizando&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:696; color:#fe9090;&quot;&gt; la versión Beta-2.1&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; color:#000000;&quot;&gt;. S&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;i tienes alguna sugerencia sobre una nueva función, errores, etc. Te dejaré aquí un botón al repositorio de GitHub o puedes escribirme con confianza a mi correo.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                             </property>
                            </widget>
                           </item>
@@ -1001,6 +1065,13 @@ p, li { white-space: pre-wrap; }
 border: 2px solid rgb(254, 144, 144);
 border-radius: 18px;
 color: rgb(254, 144, 144);
+}
+
+QPushButton::hover {
+
+background-color: rgb(254, 144, 144);
+color: white;
+
 }</string>
                       </property>
                       <property name="frameShape">
@@ -1050,7 +1121,7 @@ color: rgb(254, 144, 144);
                          </property>
                          <property name="icon">
                           <iconset>
-                           <normaloff>../icons/github_theme.svg</normaloff>../icons/github_theme.svg</iconset>
+                           <normaloff>../icons/welcome/github_theme.svg</normaloff>../icons/welcome/github_theme.svg</iconset>
                          </property>
                          <property name="iconSize">
                           <size>
@@ -1085,7 +1156,7 @@ color: rgb(254, 144, 144);
                          </property>
                          <property name="icon">
                           <iconset>
-                           <normaloff>../icons/email_theme.svg</normaloff>../icons/email_theme.svg</iconset>
+                           <normaloff>../icons/welcome/email_theme.svg</normaloff>../icons/welcome/email_theme.svg</iconset>
                          </property>
                          <property name="iconSize">
                           <size>
@@ -1158,6 +1229,15 @@ border: 2px solid qlineargradient(spread:pad, x1:0, y1:0.517045, x2:1, y2:0.5, s
 
 color: qlineargradient(spread:pad, x1:0, y1:0.517045, x2:1, y2:0.5, stop:0 rgba(254, 144, 144, 255), stop:1 rgba(255, 140, 78, 255));;
 border-radius: 14px;
+}
+
+#btn_start::hover {
+
+border: none;
+background-color: qlineargradient(spread:pad, x1:0, y1:0.517045, x2:1, y2:0.5, stop:0 rgba(254, 144, 144, 255), stop:1 rgba(255, 140, 78, 255));;
+border-radius: 14px;
+color: white;
+
 }</string>
                       </property>
                       <property name="text">
@@ -1165,7 +1245,7 @@ border-radius: 14px;
                       </property>
                       <property name="icon">
                        <iconset>
-                        <normaloff>../icons/arrow-right_theme.svg</normaloff>../icons/arrow-right_theme.svg</iconset>
+                        <normaloff>../icons/buttons/arrow-left_theme.svg</normaloff>../icons/buttons/arrow-left_theme.svg</iconset>
                       </property>
                       <property name="iconSize">
                        <size>
@@ -1238,7 +1318,7 @@ border-radius: 14px;
                     <string/>
                    </property>
                    <property name="pixmap">
-                    <pixmap>../icons/pikachu_welcome.png</pixmap>
+                    <pixmap>../icons/welcome/pikachu_welcome.png</pixmap>
                    </property>
                    <property name="scaledContents">
                     <bool>true</bool>

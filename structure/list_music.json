@@ -1,0 +1,31 @@
+{
+
+    "Pokemon FireRed & LeafGreen:": {
+
+        "path": "resources/music/pokemon_firered_leafgreen",
+        "songs": [
+
+            {"title": "Title Theme", "file": "01_title_theme.wav"},
+            {"title": "Pallet Town", "file": "02_pallet_town.wav"},
+            {"title": "Route 1", "file": "03_route_1.wav"},
+            {"title": "Gym Leader Battle", "file": "04_gym_leader_battle.wav"},
+            {"title": "Pokemon Center", "file": "05_pokemon_center.wav"}
+
+        ]
+    },
+
+    "Pokemon Smerald:": {
+
+        "path": "resources/music/pokemon_smerald",
+        "songs": [
+
+            {"title": "Route 38 GCS", "file": "01_route_38_GCS.wav"},
+            {"title": "Battle Frontier", "file": "02_battle_frontier.wav"},
+            {"title": "Battle Tower", "file": "03_battle_tower.wav"},
+            {"title": "Battle Factory", "file": "04_battle_factory.wav"}
+
+        ]
+    }
+
+}
+
