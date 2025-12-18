@@ -1,0 +1,87 @@
+{
+  "planta": {
+    "base_color": "#4f713e",
+    "accent_color": "#afe964",
+    "text_color": "#4f713e"
+  },
+  "normal": {
+    "base_color": "#5e5e5e",
+    "accent_color": "#989898",
+    "text_color": "#5e5e5e"
+  },
+  "fuego": {
+    "base_color": "#ca5753",
+    "accent_color": "#eaab7e",
+    "text_color": "#ca5753"
+  },
+  "agua": {
+    "base_color": "#536fca",
+    "accent_color": "#b5d4dd",
+    "text_color": "#536fca"
+  },
+  "eléctrico": {
+    "base_color": "#ffaa00",
+    "accent_color": "#ffaa7f",
+    "text_color": "#ffaa7f"
+  },
+  "hielo": {
+    "base_color": "#007878",
+    "accent_color": "#00d8d8",
+    "text_color": "#007878"
+  },
+  "lucha": {
+    "base_color": "#9e0000",
+    "accent_color": "#ff5500",
+    "text_color": "#9e0000"
+  },
+  "veneno": {
+    "base_color": "#7a4b87",
+    "accent_color": "#b9aac3",
+    "text_color": "#7a4b87"
+  },
+  "tierra": {
+    "base_color": "#834200",
+    "accent_color": "#e28a26",
+    "text_color": "#834200"
+  },
+  "volador": {
+    "base_color": "#578383",
+    "accent_color": "#aaffff",
+    "text_color": "#578383"
+  },
+  "psíquico": {
+    "base_color": "#96004b",
+    "accent_color": "#ff557f",
+    "text_color": "#96004b"
+  },
+  "bicho": {
+    "base_color": "#555500",
+    "accent_color": "#aaaa00",
+    "text_color": "#555500"
+  },
+  "roca": {
+    "base_color": "#550000",
+    "accent_color": "#7c3e00",
+    "text_color": "#550000"
+  },
+  "fantasma": {
+    "base_color": "#aa557f",
+    "accent_color": "#aa55ff",
+    "text_color": "#aa557f"
+  },
+  "dragón": {
+    "base_color": "#00007f",
+    "accent_color": "#5555ff",
+    "text_color": "#00007f"
+  },
+  "acero": {
+    "base_color": "#3e3e5d",
+    "accent_color": "#7878b4",
+    "text_color": "#3e3e5d"
+  },
+  "hada": {
+    "base_color": "#a800a8",
+    "accent_color": "#ffaaff",
+    "text_color": "#a800a8"
+  }
+}

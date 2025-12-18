@@ -2,7 +2,7 @@
 
     "Pokemon FireRed & LeafGreen:": {
 
-        "path": "resources/music/pokemon_firered_leafgreen",
+        "path": "resources/sounds_effects/pokemon_firered_leafgreen",
         "songs": [
 
             {"title": "Title Theme", "file": "01_title_theme.wav"},
@@ -16,7 +16,7 @@
 
     "Pokemon Smerald:": {
 
-        "path": "resources/music/pokemon_smerald",
+        "path": "resources/sounds_effects/pokemon_smerald",
         "songs": [
 
             {"title": "Route 38 GCS", "file": "01_route_38_GCS.wav"},
@@ -28,4 +28,3 @@
     }
 
 }
-

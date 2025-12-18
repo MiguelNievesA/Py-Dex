@@ -1,0 +1,16 @@
+{
+    "btn_repository":{
+        "default": "resources/icons/welcome/github_theme.svg",
+        "hover": "resources/icons/welcome/github.svg"
+    },
+
+    "btn_email": {
+        "default": "resources/icons/welcome/email_theme.svg",
+        "hover": "resources/icons/welcome/email.svg"
+    },
+
+    "btn_start":{
+        "default": "resources/icons/buttons/arrow-left_theme.svg",
+        "hover": "resources/icons/buttons/arrow-left.svg"
+    }
+}
