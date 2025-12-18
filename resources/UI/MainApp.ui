@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>929</width>
+    <width>988</width>
     <height>551</height>
    </rect>
   </property>
@@ -196,6 +196,18 @@ padding: 9px;
              </item>
              <item>
               <widget class="QFrame" name="frame_6">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
                </property>
@@ -223,8 +235,8 @@ padding: 9px;
                   <property name="styleSheet">
                    <string notr="true">#Line {
 border: none;	
-background-color: rgb(255, 255, 255);
-	
+background-color: white;
+border-radius: 6px;
 }</string>
                   </property>
                   <property name="orientation">
@@ -237,22 +249,6 @@ background-color: rgb(255, 255, 255);
              </item>
             </layout>
            </widget>
-          </item>
-          <item>
-           <spacer name="verticalSpacer_3">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>5</height>
-             </size>
-            </property>
-           </spacer>
           </item>
           <item>
            <widget class="QFrame" name="frame_4">
@@ -858,7 +854,7 @@ border: none;
            <number>0</number>
           </property>
           <item>
-           <widget class="QStackedWidget" name="pages_app">
+           <widget class="AnimatedStackedWidget" name="pages_app">
             <property name="currentIndex">
              <number>0</number>
             </property>
@@ -1441,7 +1437,7 @@ border-top-right-radius: 9px;
                       </property>
                       <property name="icon">
                        <iconset>
-                        <normaloff>../icons/icon button pokemon/pikachu.svg</normaloff>../icons/icon button pokemon/pikachu.svg</iconset>
+                        <normaloff>../icons/buttons/icon_pokemon/pikachu.svg</normaloff>../icons/buttons/icon_pokemon/pikachu.svg</iconset>
                       </property>
                       <property name="iconSize">
                        <size>
@@ -1480,11 +1476,11 @@ border-top-right-radius: 9px;
                    </property>
                    <property name="styleSheet">
                     <string notr="true">QPushButton {
-border: none;
-background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.523, y2:1, stop:0 rgba(254, 144, 144, 255), stop:1 rgba(255, 140, 78, 255));
+border: 2px solid  qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.523, y2:1, stop:0 rgba(254, 144, 144, 255), stop:1 rgba(255, 140, 78, 255));;
 border-radius: 12px;
-color: white;
+color: #ff8e6c;
 padding: 12px;
+font-size: 13px;
 }</string>
                    </property>
                    <property name="frameShape">
@@ -1521,11 +1517,11 @@ padding: 12px;
                        </size>
                       </property>
                       <property name="text">
-                       <string>Filtro</string>
+                       <string>  Filtro</string>
                       </property>
                       <property name="icon">
                        <iconset>
-                        <normaloff>../icons/buttons options/filter.svg</normaloff>../icons/buttons options/filter.svg</iconset>
+                        <normaloff>../icons/buttons/filter_theme.svg</normaloff>../icons/buttons/filter_theme.svg</iconset>
                       </property>
                      </widget>
                     </item>
@@ -1544,11 +1540,11 @@ padding: 12px;
                        </size>
                       </property>
                       <property name="text">
-                       <string>Ordenar</string>
+                       <string>  Ordenar</string>
                       </property>
                       <property name="icon">
                        <iconset>
-                        <normaloff>../icons/buttons options/order.svg</normaloff>../icons/buttons options/order.svg</iconset>
+                        <normaloff>../icons/buttons/order_theme.svg</normaloff>../icons/buttons/order_theme.svg</iconset>
                       </property>
                      </widget>
                     </item>
@@ -1617,19 +1613,19 @@ padding: 12px;
                       <number>0</number>
                      </property>
                      <item row="0" column="0">
-                      <widget class="QScrollArea" name="scrollArea">
+                      <widget class="SmoothScrollArea" name="scrollArea">
                        <property name="styleSheet">
                         <string notr="true">border: none;</string>
                        </property>
                        <property name="widgetResizable">
                         <bool>true</bool>
                        </property>
-                       <widget class="QWidget" name="scrollArea_pokemon">
+                       <widget class="QWidget" name="area_pokemon">
                         <property name="geometry">
                          <rect>
                           <x>0</x>
                           <y>0</y>
-                          <width>782</width>
+                          <width>841</width>
                           <height>396</height>
                          </rect>
                         </property>
@@ -1883,7 +1879,7 @@ font-size: 15px;
                    </property>
                    <property name="icon">
                     <iconset>
-                     <normaloff>../icons/buttons options/plus pokemon.svg</normaloff>../icons/buttons options/plus pokemon.svg</iconset>
+                     <normaloff>../icons/buttons/plus pokemon.svg</normaloff>../icons/buttons/plus pokemon.svg</iconset>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -2179,6 +2175,20 @@ border-radius: 10px;
    </layout>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AnimatedStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>structure.widgets.stacked_widget</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SmoothScrollArea</class>
+   <extends>QScrollArea</extends>
+   <header>qfluentwidgets.components.widgets.scroll_area</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

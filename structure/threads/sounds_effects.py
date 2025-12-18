@@ -15,11 +15,13 @@ import time
 import numpy as np
 
 class SoundTrack(QThread):
-    finished = pyqtSignal(bool)
+
     def __init__(self, file_path:str, loop=False):
         super().__init__()
 
         self.file_path = file_path
+        self.paused = False
+        self.current_frame = 0
         self.is_playing = False
         self.is_fading_out = False
         self.chunk_size = 1024
@@ -43,21 +45,17 @@ class SoundTrack(QThread):
             )
 
             while self.is_playing:
-                wave_file.rewind()
+                wave_file.setpos(self.current_frame)
                 data = wave_file.readframes(self.chunk_size)
 
                 while data and self.is_playing:
-                    if self.is_fading_out:
-                        num_samples = len(data) // wave_file.getsampwidth()
-                        fade_factor = np.linspace(1.0, 0.0, num=num_samples, endpoint=False)
-                        audio_data = np.frombuffer(data, dtype=np.int16).copy()  # Crear una copia mutable
 
-                        if len(fade_factor) > 0:
-                            audio_data[:len(fade_factor)] = (audio_data[:len(fade_factor)] * fade_factor).astype(np.int16)
-
-                        data = audio_data.tobytes()
+                    if self.paused:
+                        time.sleep(0.05)
+                        continue
 
                     self.stream.write(data)
+                    self.current_frame = wave_file.tell()
                     data = wave_file.readframes(self.chunk_size)
 
                 if not self.loop:
@@ -69,8 +67,6 @@ class SoundTrack(QThread):
             p.terminate()
             wave_file.close()
 
-            self.finished.emit(True)
-
         self.is_playing = False
 
     def stop_sountrack(self):
@@ -79,6 +75,12 @@ class SoundTrack(QThread):
             return
         
         self.is_playing = False
+        self.paused = False
+        self.current_frame = 0
+        self.wait()
 
-        self.wait()  # Esperar a que el hilo termine
+    def pause(self):
+        self.paused = True
 
+    def resume(self):
+        self.paused = False
