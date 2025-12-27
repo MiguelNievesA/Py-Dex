@@ -99,6 +99,7 @@ class MainApp(QMainWindow):
         self.setWindowTitle("Py-Dex Beta 2.1")
         self.setWindowIcon(QIcon("resources/icons/app_icon.png"))
         self.setFixedSize(1050, 551)
+        self.setWindowIcon(QIcon("resources/icons/icon_app.svg"))
 
     # --------------------------------------------------
     # Application State Initialization
