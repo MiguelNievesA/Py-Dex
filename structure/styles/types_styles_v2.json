@@ -83,5 +83,12 @@
     "base_color": "#a800a8",
     "accent_color": "#ffaaff",
     "text_color": "#a800a8"
+  },
+
+  "siniestro": {
+    "base_color": "#55557f",
+    "accent_color": "#5b5b5b",
+    "text_color": "#55557f"
   }
+
 }

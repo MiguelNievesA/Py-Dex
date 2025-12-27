@@ -12,5 +12,15 @@
     "btn_start":{
         "default": "resources/icons/buttons/arrow-left_theme.svg",
         "hover": "resources/icons/buttons/arrow-left.svg"
+    },
+
+    "btn_filter":{
+        "default": "resources/icons/buttons/filter_theme.svg",
+        "hover": "resources/icons/buttons/filter.svg"
+    },
+
+    "btn_order":{
+        "default": "resources/icons/buttons/order_theme.svg",
+        "hover": "resources/icons/buttons/order.svg"
     }
 }
