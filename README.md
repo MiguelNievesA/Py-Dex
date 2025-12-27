@@ -1,2 +1,12 @@
-# Py-Dex
-It is a desktop application that allows you to view all the information about the Pokémon world in real time. It has a modern interface that is user-friendly for any fan of this great franchise.
+<p>
+  <img width="18%" align="center" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/logo_app.png" alt="logo">
+</p>
+<h1>
+  Py-Dex - Application (PyQt5)
+</h1>
+<p align="center">
+  Una simple aplicación que te permitira explorar el mundo Pokémon. Hecha a partir de PyQt5 en Python.
+</p>
+<div align="center">
+  
+</div>
