@@ -2,9 +2,11 @@ import aiohttp
 import asyncio
 import sys
 from structure.custom_exceptions import InternetConnectionError
+from structure.custom_exceptions import PokemonNotFoundError
 
 if sys.platform.startswith("win"):
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
 
 class APIPokemon:
     async def fetch_data(self, session, url):
@@ -15,11 +17,13 @@ class APIPokemon:
                 if response.status == 200:
                     return await response.json()
                 
-                else:
-                    return {"error": f"{response.status}"}
+                if response.status == 404:
+                    raise PokemonNotFoundError("Pokémon no encontrado")
+                
+                raise Exception(f"Error HTTP {response.status}")
         
         except aiohttp.ClientConnectionError:
-            raise InternetConnectionError("No internet connection available.")
+            raise InternetConnectionError("No tienes conexión a internet en estos momentos.")
 
 
     async def fetch_pokemon(self, session, pokemon):
@@ -38,6 +42,16 @@ class APIPokemon:
         # Description
         specie_url = pokemon_data["species"]["url"]
         descriptions = await self.fetch_data(session, specie_url)
+
+        flavor_entries = []
+
+        for entry in descriptions["flavor_text_entries"]:
+
+            flavor_entries.append({
+                "text": entry["flavor_text"].replace("\n", " ").replace("\f", " ").strip(),
+                "language": entry["language"]["name"]
+            })
+
 
         # Gender
         gender_task = self.fetch_data(session, specie_url)
@@ -70,7 +84,7 @@ class APIPokemon:
             "types": [type_url["names"][5]["name"].lower() for type_url in types_data],
             "abilities": [ability["names"][5]["name"] for ability in abilities],
             "hidden_ability": [hidden_ability["names"][5]["name"] for hidden_ability in hidden_abilities],
-            "description": (descriptions["flavor_text_entries"][26]["flavor_text"], descriptions["flavor_text_entries"][34]["flavor_text"]),
+            "description": flavor_entries,
             "gender_ratio": gender[0]["gender_rate"],
             "base_stats": stats_dict
         }

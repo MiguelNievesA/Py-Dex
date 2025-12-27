@@ -6,3 +6,6 @@
 class InternetConnectionError(Exception):
     """Raised when there is no internet connection."""
     pass
+
+class PokemonNotFoundError(Exception):
+    pass

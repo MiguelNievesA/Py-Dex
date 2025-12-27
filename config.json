@@ -1,0 +1,17 @@
+{
+    "QFluentWidgets": {
+        "FontFamilies": [
+            "Segoe UI",
+            "Microsoft YaHei",
+            "PingFang SC"
+        ],
+        "ThemeColor": "#ff009faa",
+        "ThemeMode": "Light"
+    },
+    "Audio": {
+        "MusicVolume": 100
+    },
+    "General": {
+        "NumPokemon": 20
+    }
+}

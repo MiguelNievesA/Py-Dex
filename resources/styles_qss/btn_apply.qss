@@ -1,0 +1,9 @@
+
+
+border: none;
+background-color: qlineargradient(spread:pad, x1:0, y1:0.517045, x2:1, y2:0.5, stop:0 rgba(254, 144, 144, 255), stop:1 rgba(255, 140, 78, 255));;
+border-radius: 14px;
+color: white;
+
+
+
