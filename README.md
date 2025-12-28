@@ -36,6 +36,12 @@ Copyright © 2025 by MiguelNievesA
 [![PyQt Fluent Widgets](https://img.shields.io/badge/UI-PyQt--Fluent--Widgets-2C7BE5?style=flat-square&logo=qt&logoColor=white)](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)
 [![Custom Widgets](https://img.shields.io/badge/UI-Custom--Qt--Widgets-6C757D?style=flat-square&logo=qt&logoColor=white)](https://github.com/KhamisiKibet/QT-PyQt-PySide-Custom-Widgets)
 
+## API utilizada para los datos de los Pokémon
+
+<p align="center">
+  <img width="20%" align="center" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/pokeapi_.png" alt="logo">
+  <a href="https://pokeapi.co">Si quieres saber más de esta herramienta dale click aquí.</a>
+</p>
 
 ## 🛠️ Instalación y dependencias de la aplicación
 
