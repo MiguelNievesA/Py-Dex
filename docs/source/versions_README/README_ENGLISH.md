@@ -32,19 +32,8 @@ Copyright © 2025 by MiguelNievesA
 
 ## Libraries used for UI/UX
 
-<div>
-  <img width="25%" align="center" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/fluent_widgets.png" alt="logo">
-
-  <a href="https://github.com/zhiyiYo/PyQt-Fluent-Widgets/">PyQt-Fluent-Widgets</a>
-</div>
-
-<div>
-  <img width="25%" align="center" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/
-  custom_widgets_art.png">
-
-  <a href="https://github.com/KhamisiKibet/QT-PyQt-PySide-Custom-Widgets">QT-PyQt-PySide-Custom-Widgets</a>
-</div>
-
+[![PyQt Fluent Widgets](https://img.shields.io/badge/UI-PyQt--Fluent--Widgets-2C7BE5?style=flat-square&logo=qt&logoColor=white)](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)
+[![Custom Widgets](https://img.shields.io/badge/UI-Custom--Qt--Widgets-6C757D?style=flat-square&logo=qt&logoColor=white)](https://github.com/KhamisiKibet/QT-PyQt-PySide-Custom-Widgets)
 
 ## 🛠️ Application Installation and Dependencies
 
