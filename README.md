@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="25%" align="center" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/logo_app.png" alt="logo">
+  <img width="20%" align="center" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/logo_app.png" alt="logo">
 </p>
 <h1>
   Py-Dex - Aplicación de escritorio (PyQt5)
@@ -40,8 +40,7 @@ Copyright © 2025 by MiguelNievesA
 </div>
 
 <div>
-  <img width="25%" align="center" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/
-  custom_widgets_art.png">
+  <img width="25%" align="center" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/custom_widgets_art.png" alt="logo">
 
   <a href="https://github.com/KhamisiKibet/QT-PyQt-PySide-Custom-Widgets">QT-PyQt-PySide-Custom-Widgets</a>
 </div>
