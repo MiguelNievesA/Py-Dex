@@ -33,19 +33,20 @@ Copyright © 2025 by MiguelNievesA
 
 ## Librerías utilizadas para la UI/UX
 
-<table align="center">
+## Librerías utilizadas para la UI/UX
+
+<table>
   <tr>
-    <td align="center">
+    <td align="left">
       <img width="180" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/fluent_widgets.png" alt="PyQt Fluent Widgets"><br>
       <a href="https://github.com/zhiyiYo/PyQt-Fluent-Widgets/">PyQt-Fluent-Widgets</a>
     </td>
-    <td align="center">
+    <td align="left">
       <img width="180" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/custom_widgets_art.png" alt="Custom Widgets"><br>
       <a href="https://github.com/KhamisiKibet/QT-PyQt-PySide-Custom-Widgets">QT-PyQt-PySide-Custom-Widgets</a>
     </td>
   </tr>
 </table>
-
 
 ## 🛠️ Instalación y dependencias de la aplicación
 
