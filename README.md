@@ -35,14 +35,14 @@ Copyright © 2025 by MiguelNievesA
 
 ## Librerías utilizadas para la UI/UX
 
-<table>
+<table style="border: none;">
   <tr>
     <td align="left">
-      <img width="180" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/fluent_widgets.png" alt="PyQt Fluent Widgets"><br>
+      <img width="40%" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/fluent_widgets.png" alt="PyQt Fluent Widgets"><br>
       <a href="https://github.com/zhiyiYo/PyQt-Fluent-Widgets/">PyQt-Fluent-Widgets</a>
     </td>
     <td align="left">
-      <img width="180" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/custom_widgets_art.png" alt="Custom Widgets"><br>
+      <img width="60%" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/custom_widgets_art.png" alt="Custom Widgets"><br>
       <a href="https://github.com/KhamisiKibet/QT-PyQt-PySide-Custom-Widgets">QT-PyQt-PySide-Custom-Widgets</a>
     </td>
   </tr>
