@@ -78,9 +78,10 @@ class GenderIndicator:
     def _show_no_gender(self):
 
         if not self.no_gender_label:
-            self.no_gender_label = QLabel("No gender")
+            self.no_gender_label = QLabel("Sin sexo")
             self.no_gender_label.setAlignment(Qt.AlignCenter)
             self.no_gender_label.setObjectName("label_no_gender")
+            self.no_gender_label.setStyleSheet("#label_no_gender { color: #FE9090; font-size: 17px; }")
             self.layout.addWidget(self.no_gender_label)
 
         self.no_gender_label.show()

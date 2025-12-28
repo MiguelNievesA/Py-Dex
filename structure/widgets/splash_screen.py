@@ -69,9 +69,7 @@ class SplashScreen(QFrame):
         # ---------------- Application Loader ----------------
 
         # Loader thread responsible for preparing the app context
-        self.loader = AppLoader(
-            os.path.abspath(os.path.dirname(sys.argv[0]))
-        )
+        self.loader = AppLoader()
 
         self._connectLoader()
 
@@ -121,7 +119,24 @@ class SplashScreen(QFrame):
         self._load_success = True
         self._context = context
 
-        self.label_loading.setText("Loading completed")
+        self.label_loading.setText("Carga completada!")
+
+        # Show warnings if exists
+        warnings = context.get("warnings", [])
+
+        for warning in warnings:
+
+            InfoBar.warning(
+                parent=self,
+                title="Advertencia",
+                content=warning,
+                orient=Qt.Vertical,
+                isClosable=True,
+                position=InfoBarPosition.TOP,
+                duration=3000
+            )
+
+        delay = 2400 + (len(warnings) * 600)
 
         # Delay before fading out the splash screen
         QTimer.singleShot(800, self._fadeOut)
@@ -169,7 +184,7 @@ class SplashScreen(QFrame):
 
     def _showLoaderError(self, message):
 
-        self.label_loading.setText("Error during loading!")
+        self.label_loading.setText("Error al cargar la aplicación!")
 
         InfoBar.error(
             parent=self,

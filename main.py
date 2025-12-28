@@ -20,7 +20,7 @@ from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QAction, 
     QAbstractButton, QSizePolicy, QGridLayout
 )
-from PyQt5.QtGui import QIcon, QPixmap, QDesktopServices
+from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtCore import Qt, QEvent, QEasingCurve, QTimer, QUrl
 from PyQt5.uic import loadUi
 
@@ -299,6 +299,7 @@ class MainApp(QMainWindow):
     def _init_music_menu(self):
 
         self.music_button = DropDownPushButton("Seleccionar música", self)
+        self.music_button.setFixedWidth(190)
         main_menu = RoundMenu(parent=self.music_button)
 
         # Create a submenu for each Pokemon game
@@ -1066,14 +1067,23 @@ class MainApp(QMainWindow):
         self.search_loader.error.connect(self._onSearchPokemonError)
 
         # Start background API requests
+        self.showLoadingPokemonInfo(self.search_pokemon.text().strip().lower())
         self.search_loader.start()
 
     def _onSearchPokemonLoaded(self, data: dict):
+
+        if self._active_infobar:
+            self._active_infobar.close()
+            self._active_infobar = None
 
         # Open Pokemon detail page with fetched data
         self._openPokemonApiPage(data)
 
     def _onSearchPokemonError(self, message: str):
+
+        if self._active_infobar:
+            self._active_infobar.close()
+            self._active_infobar = None
 
         InfoBar.warning(
             parent=self,
@@ -1232,6 +1242,24 @@ class MainApp(QMainWindow):
             icon=icon,
             duration=duration,
             on_closed=_on_infobar_closed
+        )
+
+        self._active_infobar.show()
+
+    def showLoadingPokemonInfo(self, name_or_id: str):
+
+        if self._active_infobar is not None:
+            return
+
+        self._active_infobar = InfoBar(
+            parent=self,
+            title="Buscando Pokémon",
+            content=f"Solicitando datos de '{name_or_id}...'",
+            orient=Qt.Horizontal,
+            isClosable=False,
+            position=InfoBarPosition.TOP,
+            icon=InfoBarIcon.INFORMATION,
+            duration=-1
         )
 
         self._active_infobar.show()

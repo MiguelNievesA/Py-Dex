@@ -19,7 +19,7 @@
         "path": "resources/sounds_effects/pokemon_smerald",
         "songs": [
 
-            {"title": "Route 38 GCS", "file": "01_route_38_GCS.wav"},
+            {"title": "Route 38 GCS", "file": "01_route_38_GSC.wav"},
             {"title": "Battle Frontier", "file": "02_battle_frontier.wav"},
             {"title": "Battle Tower", "file": "03_battle_tower.wav"},
             {"title": "Battle Factory", "file": "04_battle_factory.wav"}
