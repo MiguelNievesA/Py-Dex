@@ -106,6 +106,16 @@ class MainApp(QMainWindow):
     # --------------------------------------------------
     def _init_state(self):
 
+        required_keys = {
+            "hover_icons",
+            "music_data"
+        }
+
+        for key in required_keys:
+
+            if key not in self.context:
+                raise RuntimeError(f"Hacen falta datos necesarios para ejecutar la aplicación: {key}")
+
         # Pokedex batch loading state
         self._batch_size = 20
         self._next_pokemon_id = 1
