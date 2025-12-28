@@ -38,10 +38,11 @@ Copyright © 2025 by MiguelNievesA
 
 ## API utilizada para los datos de los Pokémon
 
-<p align="center">
+<div>
   <img width="20%" align="center" src="https://raw.githubusercontent.com/MiguelNievesA/Py-Dex/master/docs/source/static_icons/pokeapi_.png" alt="logo">
-  <a href="https://pokeapi.co">Si quieres saber más de esta herramienta dale click aquí.</a>
-</p>
+</div>
+
+<a align="center" href="https://pokeapi.co">Si quieres saber más de esta herramienta dale click aquí.</a>
 
 ## 🛠️ Instalación y dependencias de la aplicación
 
